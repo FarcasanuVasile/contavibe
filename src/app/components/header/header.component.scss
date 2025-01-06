@@ -1,0 +1,48 @@
+.logo {
+  img {
+    width: 100px;
+    transform: scale(1.5);
+  }
+  a {
+    display: block;
+  }
+}
+
+.site-nav {
+  a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  padding: 5.5px;
+  border: none;
+  background-color: transparent;
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-row {
+    display: grid;
+    grid-template-rows: auto 0fr;
+    width: 100%;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .navigation-input:checked ~ label .icon--open,
+  .navigation-input:not(:checked) ~ label .icon--close {
+    display: none;
+  }
+}

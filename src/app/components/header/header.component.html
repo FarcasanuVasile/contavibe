@@ -1,0 +1,56 @@
+<header>
+  <div class="container container-fluid">
+    <div
+      class="header-row overflow-hidden d-sm-flex align-items-center justify-content-between py-4 px-2"
+    >
+      <div
+        class="logo-wrap mb-4 d-flex align-items-center justify-content-between"
+      >
+        <div class="logo overflow-hidden">
+          <a href="/" title="Contavibe">
+            <img src="logo.png" class="img-fluid" alt="Contavibe Logo" />
+          </a>
+        </div>
+        <input
+          type="checkbox"
+          name="navigation-input"
+          id="navigation-input"
+          class="navigation-input d-none"
+          [checked]="inputChecked"
+        />
+        <label for="navigation-input">
+          <button
+            class="burger"
+            type="button"
+            title="Open Menu"
+            (click)="toggleMenu($event)"
+          >
+            <svg
+              viewBox="0 0 1000 1000"
+              class="icon--open"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"
+              ></path>
+            </svg>
+            <svg
+              viewBox="0 0 1000 1000"
+              class="icon--close"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"
+              ></path>
+            </svg></button
+        ></label>
+      </div>
+      <nav class="site-nav d-block overflow-hidden d-sm-flex gap-4">
+        <a routerLink="/" title="Acasa">Acasa</a>
+        <a routerLink="/despre" title="Despre Noi">Despre Noi</a>
+        <a routerLink="/servicii" title="Servicii">Servicii</a>
+        <a routerLink="/contact" title="Contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+</header>

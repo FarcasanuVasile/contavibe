@@ -1,0 +1,28 @@
+footer {
+  background-color: #34659b;
+  &,
+  a {
+    color: #fff;
+  }
+
+  a {
+    text-underline-offset: 3px;
+  }
+}
+
+.footer-logo {
+  img {
+    width: 100px;
+    transform: scale(1.5);
+    filter: invert(1);
+  }
+}
+
+.logo-ceccar img {
+  width: 100px;
+}
+
+.footer-col-title {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
